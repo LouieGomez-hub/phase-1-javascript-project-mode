@@ -9,6 +9,71 @@
         "id": 2,
         "name": "Batman: Arkham",
         "image": "https://upload.wikimedia.org/wikipedia/en/thumb/4/48/Batman_Arkham_series_logo.png/250px-Batman_Arkham_series_logo.png"
+      },
+      {
+        "id": 3,
+        "name": "Borderlands",
+        "image": "https://www.pngitem.com/pimgs/m/222-2228337_pop-games-borderlands-1-logo-png-transparent-png.png"
+      },
+      {
+        "id": 4,
+        "name": "Call Of Duty",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/47/Logo_Franchise_CoD.png"
+      },
+      {
+        "id": 5,
+        "name": "Far Cry",
+        "image": "https://static.wikia.nocookie.net/logopedia/images/8/82/FarCry.png/revision/latest?cb=20140826172843"
+      },
+      {
+        "id": 6,
+        "name": "Gears Of War",
+        "image": "https://logos-world.net/wp-content/uploads/2021/02/Gears-of-War-Logo.png"
+      },
+      {
+        "id": 7,
+        "name": "God of War",
+        "image": "https://e7.pngegg.com/pngimages/277/559/png-clipart-god-of-war-iii-video-game-playstation-4-kratos-poster-text-poster.png"
+      },
+      {
+        "id": 8,
+        "name": "Halo",
+        "image": "https://logos-world.net/wp-content/uploads/2020/11/Halo-Logo-2007-2009.png"
+      },
+      {
+        "id": 9,
+        "name": "Just Dance",
+        "image": "https://static.wikia.nocookie.net/justdance/images/b/bb/Justdance_pink_logo.png/revision/latest?cb=20180814165702"
+      },
+      {
+        "id": 10,
+        "name": "Kingdom Hearts",
+        "image": "https://static.wikia.nocookie.net/logopedia/images/6/68/Kingdom_Hearts_logo.png/revision/latest?cb=20180108194524"
+      },
+      {
+        "id": 11,
+        "name": "The Last Of Us",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/The_Last_of_Us_logo.png/325px-The_Last_of_Us_logo.png"
+      },
+      {
+        "id": 12,
+        "name": "Ratchet And Clank",
+        "image": "https://static.wikia.nocookie.net/playstation/images/d/d8/Ratchet_%26_Clank.png/revision/latest?cb=20200716140440"
+      },
+      {
+        "id": 13,
+        "name": "Uncharted",
+        "image": "https://www.giantbomb.com/a/uploads/scale_medium/0/8169/1154962-uncharted_logo.png"
+      },
+      {
+        "id": 14,
+        "name": "The Witcher",
+        "image": "https://upload.wikimedia.org/wikipedia/en/5/53/The_Witcher_video_game_series_logo.png"
+      },
+      {
+        "id": 15,
+        "name": "WWE 2k",
+        "image": "https://www.pngitem.com/pimgs/m/23-232553_wwe-2k-logo-png-transparent-png.png"
       }
     ]
   }
