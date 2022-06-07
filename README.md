@@ -35,7 +35,19 @@ function showAndHide(btnId, text) {
 ```
  to show a text box that provides information about each specific franchise upon clicking the title of any game series. 
  
- There's also a click event used to change the web page from its default light theme to a dark theme if someone chooses to do so.
+ There's also an event listener added to toggle the web page between its default light theme and a dark theme should someone wish to do so.
+ ```JavaScript
+ lightSwitch.addEventListener('click', function() {
+    document.body.classList.toggle('light-theme');
+    document.body.classList.toggle('dark-theme');
+
+    const className = document.body.className;
+    if(className == "light-theme"){
+        this.textContent = "Dark";
+    } else {
+        this.textContent = "Light";
+    }
+```
 
 ### Languages Used:
 * JavaScript
