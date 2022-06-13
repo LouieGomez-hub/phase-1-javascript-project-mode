@@ -1,6 +1,10 @@
 'use strict';
 
-const BASE_URL = 'https://list.ly/api'
+const BASE_URL = 'http://localhost:3000/games'
+
+document.addEventListener("DOMContentLoaded", () => {
+  
+})
 
 const lightSwitch = document.querySelector('.btn2');
 
