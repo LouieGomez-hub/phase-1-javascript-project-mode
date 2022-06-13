@@ -1,4 +1,7 @@
 'use strict';
+
+const BASE_URL = 'https://list.ly/api'
+
 const lightSwitch = document.querySelector('.btn2');
 
 lightSwitch.addEventListener('click', function() {
