@@ -29,44 +29,6 @@ img {
   width: 60px;
 }
 
-p {
-  font-family: helvetica;
-  margin-right: 70%;
-  margin-left: 5%;
-  text-align: left;
-  float: left;
-  margin-block-start: 0.1%;
-  margin-block-end: 0.15%;
-}
-
-.games {
-  border: none;
-  background-color: var(--bg);
-  font-size: medium;
-  font-style: oblique;
-  color: rgb(181, 22, 181);
-  text-decoration: underline;
-}
-
-li {
-  font-size: larger;
-  margin-block-end: 2%;
-}
-
-span1 {
-  color: var(--fontColor)
-}
-
-span2 {
-  text-decoration: underline;
-  text-decoration-color: #242424b1;
-  color: gold
-}
-
-span3 {
-  color: rgb(197, 9, 9);
-}
-
 #myDIV {
   background-size: cover;
   background-image: url(https://t3.ftcdn.net/jpg/05/03/82/82/360_F_503828297_1CHZRVpb87cfjhL4sHWKJrF342uogviV.jpg);
