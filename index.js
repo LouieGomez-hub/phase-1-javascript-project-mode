@@ -1,10 +1,25 @@
 'use strict';
-
 const BASE_URL = 'http://localhost:3000/games'
 
 document.addEventListener("DOMContentLoaded", () => {
-  
+  getGames()
 })
+
+
+function getGames() {
+  const ul = document.getElementById('gameDisplay')
+  fetch(BASE_URL)
+  .then(res => res.json())
+  .then(data => {
+    console.log(data)
+    data.forEach(game => {
+      ul.innerHTML += `
+        <li>${game.name}</li>
+      `
+    })
+  })
+}
+
 
 const lightSwitch = document.querySelector('.btn2');
 
@@ -19,22 +34,3 @@ lightSwitch.addEventListener('click', function() {
         this.textContent = "Light";
     }
 });
-
-var activeBtn = null; 
-
-function showAndHide(btnId, text) {
-  var x = document.getElementById("myDIV");
-  if (activeBtn === btnId) {
-    x.innerHTML = text;
-    activeBtn = null
-  } else {
-    x.innerHTML = text;
-      activeBtn = btnId;
-  } 
-  var x = document.getElementById("myDIV");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
