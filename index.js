@@ -14,12 +14,29 @@ function getGames() {
     console.log(data)
     data.forEach(game => {
       ul.innerHTML += `
-        <li><a href="#">${game.name}</a></li>
+        <li><a href="#" data-id="${game.id}">${game.name}</a></li>
       `
     })
+    attachClicksToLinks()
   })
 }
 
+const attachClicksToLinks = () => {
+  const games = document.querySelectorAll('a')
+  games.forEach((game) => {
+    game.addEventListener('click', gameDetails)
+  })
+}
+
+const gameDetails = (e) => {
+  console.log(e.target.dataset.id)
+  const details = document.getElementById('details')
+  fetch(BASE_URL + `/${e.target.dataset.id}`)
+  .then(res => res.json())
+  .then(data => {
+    console.log(data)
+  })
+}
 
 const lightSwitch = document.querySelector('.btn2');
 
