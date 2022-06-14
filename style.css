@@ -5,12 +5,32 @@
   --black: #000000;
 }
 
+footer {
+  position: absolute;
+  right: 95px;
+  bottom: 40px;
+}
+
 h1 {
   margin-left: 7%;
+  margin-block-end: -1.4%;
 }
 
 h3 {
   margin-left: 3%;
+}
+
+#gameDisplay {
+  list-style-type: none;
+  font-style: oblique;
+  font-size: medium;
+  font-family: helvetica;
+  float: left;
+  margin-left: 3%;
+  text-align: left;
+  line-height: 40px;
+  color: rgb(181, 22, 181);
+  text-decoration: underline;
 }
 
 body {
@@ -19,31 +39,6 @@ body {
   font-family: garamond;
   text-align: center;
   margin-right: 5%
-}
-
-img {
-  margin-left: 3px;
-  display: inline-block;
-  vertical-align: middle; 
-  height: 35px;
-  width: 60px;
-}
-
-#myDIV {
-  background-size: cover;
-  background-image: url(https://t3.ftcdn.net/jpg/05/03/82/82/360_F_503828297_1CHZRVpb87cfjhL4sHWKJrF342uogviV.jpg);
-  display: none;
-  position: absolute;
-  text-align: left;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: large;
-  margin-left: 30%;
-  margin-block-start: 5%;
-  height: 350px;
-  width: 700px;
-  border-style: groove;
-  border-color: var(--btnBg);
-  border-width: 5px;
 }
 
 .light-theme {
