@@ -11,9 +11,14 @@ footer {
   bottom: 40px;
 }
 
-h1 {
+header {
+  font-size: xx-large;
   margin-left: 7%;
   margin-block-end: -1.4%;
+}
+
+h1 {
+  text-decoration: underline;
 }
 
 h3 {
@@ -33,6 +38,12 @@ a {
   margin-left: 3%;
   text-align: left;
   line-height: 40px;
+}
+
+p {
+  font-family: cursive;
+  font-size: large;
+  color: rgb(208, 155, 22);
 }
 
 body {
