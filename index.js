@@ -35,6 +35,16 @@ const gameDetails = (e) => {
   .then(res => res.json())
   .then(data => {
     console.log(data)
+    details.innerHTML = `<h1>${data.name}</h1><br/>
+    <h2>Series Premise:</h2>
+    <p>${data.seriesPremise}</p>
+    <h2>First Game Release:</h2>
+    <p>${data.firstGameRelease}</p>
+    <h2>Latest Game Release:</h2>
+    <p>${data.latestGameRelease}</p>
+    <h2>Highest Earning Game:</h2>
+    <p>${data.highestEarningGame}</p>
+    `
   })
 }
 
