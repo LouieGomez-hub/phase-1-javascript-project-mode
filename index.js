@@ -14,7 +14,7 @@ function getGames() {
     console.log(data)
     data.forEach(game => {
       ul.innerHTML += `
-        <li>${game.name}</li>
+        <li><a href="#">${game.name}</a></li>
       `
     })
   })
