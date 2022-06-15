@@ -69,3 +69,4 @@ function getGames() {
 * JavaScript
 * HTML
 * CSS
+* JSON
