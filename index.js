@@ -5,16 +5,14 @@ document.addEventListener("DOMContentLoaded", () => {
   getGames()
 })
 
-
 function getGames() {
   const ul = document.getElementById('gameDisplay')
   fetch(BASE_URL)
   .then(res => res.json())
   .then(data => {
-    console.log(data)
     data.forEach(game => {
       ul.innerHTML += `
-        <li><a href="#" data-id="${game.id}">${game.name}</a></li>
+        <li><a href="#" data-id="${game.id}">${game.name} <img src="${game.image}"</a></li>
       `
     })
     attachClicksToLinks()
@@ -35,7 +33,7 @@ const gameDetails = (e) => {
   .then(res => res.json())
   .then(data => {
     console.log(data)
-    details.innerHTML = `<h1>${data.name}</h1><br/>
+    details.innerHTML = `<h1>${data.name}</h1>
     <h2>Series Premise:</h2>
     <p>${data.seriesPremise}</p>
     <h2>First Game Release:</h2>
@@ -45,6 +43,14 @@ const gameDetails = (e) => {
     <h2>Highest Earning Game:</h2>
     <p>${data.highestEarningGame}</p>
     `
+
+   let x = document.getElementById('details');
+if(x.style.display === "none") {
+  x.style.display = "block";
+} else {
+  x.style.display = "none";
+}
+
   })
 }
 
