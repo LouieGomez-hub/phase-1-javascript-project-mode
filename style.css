@@ -17,6 +17,12 @@ header {
   margin-block-end: -1.4%;
 }
 
+img {
+  width: 65px;
+  height: 35px;
+  vertical-align: middle;
+}
+
 h1 {
   text-decoration: underline;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -50,7 +56,8 @@ a {
   font-size: medium;
   font-family: helvetica;
   float: left;
-  margin-left: 3%;
+  margin-left: 1%;
+  margin-top: 0%;
   text-align: left;
   line-height: 40px;
 }
