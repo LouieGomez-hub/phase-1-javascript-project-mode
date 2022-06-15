@@ -29,7 +29,27 @@ function getGames() {
       ul.innerHTML += `
         <li><a href="#" data-id="${game.id}">${game.name} <img src="${game.image}"</a></li>
 ```
- ...in order to render each game in the list along with the logo of each respective game. 
+ ...in order to render each series title in the list along with the logo of each respective game series. 
+
+ Another fetch request is used, alongside a click event, so that upon clicking any of the individual games, a text box will appear that provides specific information about the game franchise that was clicked.
+```JavaScript
+ const gameDetails = (e) => {
+  console.log(e.target.dataset.id)
+  const details = document.getElementById('details')
+  fetch(BASE_URL + `/${e.target.dataset.id}`)
+  .then(res => res.json())
+  .then(data => {
+    console.log(data)
+    details.innerHTML = `<h1>${data.name}</h1>
+    <h2>Series Premise:</h2>
+    <p>${data.seriesPremise}</p>
+    <h2>First Game Release:</h2>
+    <p>${data.firstGameRelease}</p>
+    <h2>Latest Game Release:</h2>
+    <p>${data.latestGameRelease}</p>
+    <h2>Highest Earning Game:</h2>
+    <p>${data.highestEarningGame}</p>
+```
  
  There's also an event listener added to toggle the web page between its default light theme and a dark theme should someone wish to do so.
  ```JavaScript
