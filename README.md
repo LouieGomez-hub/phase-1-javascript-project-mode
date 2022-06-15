@@ -14,26 +14,22 @@ After seeing a similar web page based on specific films, I decided to take my lo
     * and which game earned the most money in the series
 
 ## Project Function:
-This project displays a list of titles of game franchises thats uses a display function
+This project uses an event listener and fetch request, shown here...
 ```JavaScript 
-function showAndHide(btnId, text) {
-  var x = document.getElementById("myDIV");
-  if (activeBtn === btnId) {
-    x.innerHTML = text;
-    activeBtn = null
-  } else {
-    x.innerHTML = text;
-      activeBtn = btnId;
-  } 
-  var x = document.getElementById("myDIV");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
+document.addEventListener("DOMContentLoaded", () => {
+  getGames()
+})
+
+function getGames() {
+  const ul = document.getElementById('gameDisplay')
+  fetch(BASE_URL)
+  .then(res => res.json())
+  .then(data => {
+    data.forEach(game => {
+      ul.innerHTML += `
+        <li><a href="#" data-id="${game.id}">${game.name} <img src="${game.image}"</a></li>
 ```
- to show a text box that provides information about each specific franchise upon clicking the title of any game series. 
+ ...in order to render each game in the list along with the logo of each respective game. 
  
  There's also an event listener added to toggle the web page between its default light theme and a dark theme should someone wish to do so.
  ```JavaScript
