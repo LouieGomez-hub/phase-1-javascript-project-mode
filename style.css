@@ -23,7 +23,7 @@ h1 {
 }
 
 h2 {
-  color: rgb(197, 9, 9);
+  color: rgb(216, 187, 18);
 }
 
 h3 {
@@ -37,6 +37,11 @@ a {
 #details {
   display: none;
   margin-top: 3%;
+  border-style: ridge;
+  border-color: rgba(162, 127, 37, 0.874);
+  background-image: url(https://wallpaperaccess.com/full/1153667.jpg);
+  background-size: cover;
+  margin-left: 20%;
 }
 
 #gameDisplay {
@@ -53,7 +58,7 @@ a {
 p {
   font-family: cursive;
   font-size: large;
-  color: rgb(208, 155, 22);
+  color: rgb(197, 9, 9);
 }
 
 body {
