@@ -1,17 +1,27 @@
 'use strict';
 const BASE_URL = 'http://localhost:3000/games'
-
+/***
+ * learning more on destructuring
+ * how can I implement these
+ * why do I use functions
+ * review scope
+ * review DOMContentLoaded
+ * 
+ * move away from innerHtml
+ * add another unique event listener
+ * be explicit with variable names
+ */
 document.addEventListener("DOMContentLoaded", () => {
   getGames()
 })
 
 function getGames() {
-  const ul = document.getElementById('gameDisplay')
+  const gameList = document.getElementById('gameDisplay')
   fetch(BASE_URL)
   .then(res => res.json())
   .then(data => {
     data.forEach(game => {
-      ul.innerHTML += `
+      gameList.innerHTML += `
         <li><a href="#" data-id="${game.id}">${game.name} <img src="${game.image}"</a></li>
       `
     })
@@ -44,11 +54,11 @@ const gameDetails = (e) => {
     <p>${data.highestEarningGame}</p>
     `
 
-   let x = document.getElementById('details');
-if(x.style.display === "none") {
-  x.style.display = "block";
+   let infoBox = document.getElementById('details');
+if(infoBox.style.display === "none") {
+  infoBox.style.display = "block";
 } else {
-  x.style.display = "none";
+  infoBox.style.display = "none";
 }
 
   })
