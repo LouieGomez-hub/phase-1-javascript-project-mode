@@ -57,9 +57,9 @@ a {
   font-family: helvetica;
   float: left;
   margin-left: 1%;
-  margin-top: 0%;
+  margin-top: -1.5%;
   text-align: left;
-  line-height: 40px;
+  line-height: 45px;
 }
 
 p {
