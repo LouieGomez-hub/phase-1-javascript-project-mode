@@ -1,19 +1,7 @@
 'use strict';
 const BASE_URL = 'http://localhost:3000/games'
-/***
- * learning more on destructuring
- * how can I implement these
- * why do I use functions
- * review scope
- * review DOMContentLoaded
- * 
- * move away from innerHtml
- * add another unique event listener
- * be explicit with variable names
- */
-document.addEventListener("DOMContentLoaded", () => {
-  getGames()
-})
+
+document.addEventListener("DOMContentLoaded", getGames)
 
 function getGames() {
   const gameList = document.getElementById('gameDisplay')
@@ -32,7 +20,7 @@ function getGames() {
 const attachClicksToLinks = () => {
   const games = document.querySelectorAll('a')
   games.forEach((game) => {
-    game.addEventListener('click', gameDetails)
+    game.addEventListener('mouseover', gameDetails)
   })
 }
 
@@ -58,7 +46,7 @@ const gameDetails = (e) => {
 if(infoBox.style.display === "none") {
   infoBox.style.display = "block";
 } else {
-  infoBox.style.display = "none";
+  infoBox.style.display = "block";
 }
 
   })
