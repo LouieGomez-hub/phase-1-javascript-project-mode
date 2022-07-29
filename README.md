@@ -16,22 +16,20 @@ After seeing a similar web page based on specific films, I decided to take my lo
 ## Project Function:
 This project uses an event listener and fetch request, shown here...
 ```JavaScript 
-document.addEventListener("DOMContentLoaded", () => {
-  getGames()
-})
+document.addEventListener("DOMContentLoaded", getGames)
 
 function getGames() {
-  const ul = document.getElementById('gameDisplay')
+  const gameList = document.getElementById('gameDisplay')
   fetch(BASE_URL)
   .then(res => res.json())
   .then(data => {
     data.forEach(game => {
-      ul.innerHTML += `
+      gameList.innerHTML += `
         <li><a href="#" data-id="${game.id}">${game.name} <img src="${game.image}"</a></li>
 ```
  ...in order to render each series title in the list along with the logo of each respective game series. 
 
- Another fetch request is used, alongside a click event, so that upon clicking any of the individual games, a text box will appear that provides specific information about the game franchise that was clicked.
+ Another fetch request is used, alongside a mouseover event, so that upon placing the mouse over the title of any of the individual games, a text box will appear that provides specific information about the specific game franchise that the mouse is on.
 ```JavaScript
  const gameDetails = (e) => {
   console.log(e.target.dataset.id)
@@ -51,7 +49,7 @@ function getGames() {
     <p>${data.highestEarningGame}</p>
 ```
  
- There's also an event listener added to toggle the web page between its default light theme and a dark theme should someone wish to do so.
+ There's also a click event added to toggle the web page between its default light theme and a dark theme should someone wish to do so.
  ```JavaScript
  lightSwitch.addEventListener('click', function() {
     document.body.classList.toggle('light-theme');
