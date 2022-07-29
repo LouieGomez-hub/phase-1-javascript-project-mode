@@ -13,11 +13,11 @@ function getGames() {
         <li><a href="#" data-id="${game.id}">${game.name} <img src="${game.image}"</a></li>
       `
     })
-    attachClicksToLinks()
+    hoverOverTitles()
   })
 }
 
-const attachClicksToLinks = () => {
+const hoverOverTitles = () => {
   const games = document.querySelectorAll('a')
   games.forEach((game) => {
     game.addEventListener('mouseover', gameDetails)
